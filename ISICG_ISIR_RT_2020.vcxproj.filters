@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="3d">
+      <UniqueIdentifier>{2fd1bbd4-d881-46a7-83bd-81413b487982}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="materials">
+      <UniqueIdentifier>{8f39de7e-d386-46aa-9171-8fa918fc2556}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\core\chrono.hpp" />
+    <ClInclude Include="src\core\defines.hpp" />
+    <ClInclude Include="src\core\image.hpp" />
+    <ClInclude Include="src\3d\sphere.hpp">
+      <Filter>3d</Filter>
+    </ClInclude>
+    <ClInclude Include="src\3d\triangleMesh.hpp">
+      <Filter>3d</Filter>
+    </ClInclude>
+    <ClInclude Include="src\3d\aObject3D.hpp">
+      <Filter>3d</Filter>
+    </ClInclude>
+    <ClInclude Include="src\materials\aMaterial.hpp">
+      <Filter>materials</Filter>
+    </ClInclude>
+    <ClInclude Include="src\materials\flatColorMaterial.hpp">
+      <Filter>materials</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\intersection.hpp" />
+    <ClInclude Include="src\core\ray.hpp" />
+    <ClInclude Include="src\core\camera.hpp" />
+    <ClInclude Include="src\brdf\microfacet.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\main.cpp" />
+    <!--<Filter>3d</Filter> -->
+    <!--</ClCompile> -->
+  </ItemGroup>
+</Project>
